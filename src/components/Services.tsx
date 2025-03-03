@@ -31,11 +31,15 @@ const Services = () => {
 	return (
 		<section id="servicos" className="py-20 bg-gray-100">
 			<div className="container mx-auto px-4">
-				<div className="text-center mb-16">
+				<div className="text-center mb-16" data-aos="fade-up">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						Nossos Serviços
 					</h2>
-					<p className="text-gray-600 max-w-2xl mx-auto">
+					<p
+						className="text-gray-600 max-w-2xl mx-auto"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
 						Oferecemos uma variedade de serviços para atender a todas as suas
 						necessidades de fitness e bem-estar.
 					</p>
@@ -44,13 +48,14 @@ const Services = () => {
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 					{services.map((service, index) => (
 						<div
-							// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-							key={index}
-							className="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow"
+							className="bg-white p-6 rounded-lg shadow-md"
+							data-aos="fade-up"
+							data-aos-delay={`${index * 200}`}
+							key={service.title}
 						>
 							{service.icon}
-							<h3 className="text-xl font-bold mb-3">{service.title}</h3>
-							<p className="text-gray-600">{service.description}</p>
+							<h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+							<p>{service.description}</p>
 						</div>
 					))}
 				</div>
