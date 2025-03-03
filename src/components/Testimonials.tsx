@@ -9,7 +9,7 @@ const testimonials = [
 		image:
 			"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80",
 		quote:
-			"Desde que comecei a treinar na PowerFit, perdi 15kg e ganhei muita disposição. Os treinadores são excelentes e o ambiente é muito motivador!",
+			"Desde que comecei a treinar na Gold Lions, perdi 15kg e ganhei muita disposição. Os treinadores são excelentes e o ambiente é muito motivador!",
 		rating: 5,
 	},
 	{
@@ -56,7 +56,8 @@ const Testimonials = () => {
 						O Que Nossos Clientes Dizem
 					</h2>
 					<p className="text-gray-400 max-w-2xl mx-auto">
-						Veja os depoimentos de quem já transformou sua vida com a PowerFit.
+						Veja os depoimentos de quem já transformou sua vida com a Gold
+						Lions.
 					</p>
 				</div>
 
@@ -121,15 +122,15 @@ const Testimonials = () => {
 					</div>
 
 					<div className="flex justify-center mt-6 space-x-2">
-						{testimonials.map((_, index) => (
+						{testimonials.map((testimonial) => (
 							// biome-ignore lint/a11y/useButtonType: <explanation>
 							<button
-								key={index}
-								onClick={() => setCurrentIndex(index)}
+								key={testimonial.id}
+								onClick={() => setCurrentIndex(testimonial.id)}
 								className={`w-3 h-3 rounded-full ${
-									index === currentIndex ? "bg-red-500" : "bg-gray-600"
+									testimonial.id === currentIndex ? "bg-red-500" : "bg-gray-600"
 								}`}
-								aria-label={`Go to testimonial ${index + 1}`}
+								aria-label={`Go to testimonial ${testimonial.id}`}
 							/>
 						))}
 					</div>

@@ -15,7 +15,7 @@ const CallToAction = () => {
 				</h2>
 				<p className="text-xl max-w-2xl mx-auto mb-8">
 					Junte-se a milhares de pessoas que já transformaram suas vidas com a
-					PowerFit. O primeiro passo para uma vida mais saudável começa aqui.
+					Gold Lions. O primeiro passo para uma vida mais saudável começa aqui.
 				</p>
 				<Link
 					to="/planos"
