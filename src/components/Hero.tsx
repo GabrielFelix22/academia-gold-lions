@@ -15,7 +15,7 @@ const Hero = () => {
 					<span className="text-yellow-500">TRANSFORME SUA VIDA</span>
 				</h1>
 				<p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-					Na PowerFit, oferecemos equipamentos de última geração, treinadores
+					Na Gold Lions, oferecemos equipamentos de última geração, treinadores
 					especializados e um ambiente motivador para ajudar você a alcançar
 					seus objetivos.
 				</p>
