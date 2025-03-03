@@ -13,7 +13,7 @@ const Footer = () => {
 	return (
 		<footer className="bg-black text-white pt-12 pb-6">
 			<div className="container mx-auto px-4">
-				<div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 					{/* Logo and Description */}
 					<div className="col-span-1">
 						<div className="flex items-center space-x-2 mb-4">
@@ -54,34 +54,22 @@ const Footer = () => {
 						<h3 className="text-lg font-semibold mb-4">Links Rápidos</h3>
 						<ul className="space-y-2">
 							<li>
-								<Link
-									to="/"
-									className="text-gray-400 hover:text-red-500 transition-colors"
-								>
+								<Link to="/" className="text-gray-400 hover:text-red-500 transition-colors">
 									Início
 								</Link>
 							</li>
 							<li>
-								<a
-									href="/#servicos"
-									className="text-gray-400 hover:text-red-500 transition-colors"
-								>
+								<a href="/#servicos" className="text-gray-400 hover:text-red-500 transition-colors">
 									Serviços
 								</a>
 							</li>
 							<li>
-								<a
-									href="/#depoimentos"
-									className="text-gray-400 hover:text-red-500 transition-colors"
-								>
+								<a href="/#depoimentos" className="text-gray-400 hover:text-red-500 transition-colors">
 									Depoimentos
 								</a>
 							</li>
 							<li>
-								<Link
-									to="/planos"
-									className="text-gray-400 hover:text-red-500 transition-colors"
-								>
+								<Link to="/planos" className="text-gray-400 hover:text-red-500 transition-colors">
 									Planos
 								</Link>
 							</li>

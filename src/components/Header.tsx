@@ -49,43 +49,43 @@ const Header = () => {
 					>
 						{isMenuOpen ? <X size={24} /> : <Menu size={24} />}
 					</button>
-				</div>
 
-				{/* Mobile Navigation */}
-				{isMenuOpen && (
-					<nav className="md:hidden mt-4 flex flex-col space-y-4 pb-4">
-						<Link
-							to="/"
-							className="hover:text-red-500 transition-colors"
-							onClick={() => setIsMenuOpen(false)}
-						>
-							Início
-						</Link>
-						{/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-						<a
-							href="/#servicos"
-							className="hover:text-red-500 transition-colors"
-							onClick={() => setIsMenuOpen(false)}
-						>
-							Serviços
-						</a>
-						{/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
-						<a
-							href="/#depoimentos"
-							className="hover:text-red-500 transition-colors"
-							onClick={() => setIsMenuOpen(false)}
-						>
-							Depoimentos
-						</a>
-						<Link
-							to="/planos"
-							className="hover:text-red-500 transition-colors"
-							onClick={() => setIsMenuOpen(false)}
-						>
-							Planos
-						</Link>
-					</nav>
-				)}
+					{/* Mobile Navigation */}
+					{isMenuOpen && (
+						<nav className="md:hidden mt-4 flex flex-col space-y-4 pb-4">
+							<Link
+								to="/"
+								className="hover:text-red-500 transition-colors"
+								onClick={() => setIsMenuOpen(false)}
+							>
+								Início
+							</Link>
+							{/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+							<a
+								href="/#servicos"
+								className="hover:text-red-500 transition-colors"
+								onClick={() => setIsMenuOpen(false)}
+							>
+								Serviços
+							</a>
+							{/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+							<a
+								href="/#depoimentos"
+								className="hover:text-red-500 transition-colors"
+								onClick={() => setIsMenuOpen(false)}
+							>
+								Depoimentos
+							</a>
+							<Link
+								to="/planos"
+								className="hover:text-red-500 transition-colors"
+								onClick={() => setIsMenuOpen(false)}
+							>
+								Planos
+							</Link>
+						</nav>
+					)}
+				</div>
 			</div>
 		</header>
 	);
